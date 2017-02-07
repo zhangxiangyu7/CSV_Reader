@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>My AngularJS App</title>
+
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-route/angular-route.js"></script>
+		<script src="app.js"></script>
+		<script src="service/upload.js"></script>
+		<script src="templates/templates.js"></script>
+
+		<!-- Custom styles for this template -->
+		<link rel="stylesheet" href="app.css">
+	</head>
+
+	<body>
+		<div class="container">
+		<div ng-view></div>
+	</body>
+</html>

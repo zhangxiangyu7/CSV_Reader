@@ -1,0 +1,28 @@
+<div ng-controller = "templatesCtrl">
+	<div class="jumbotron">
+		<h1>Upload Your File</h1>
+		<p class="lead">This application will read your CSV file and display its name, number of rows, columns and this contents.</p>
+		<div>
+			<input class="btn btn-lg btn-success" type="file" read-text="onFileSelect($files) " accept=".csv">
+		</div>
+	</div>
+
+	<div class="row marketing" >
+	<div class="col-lg-8">
+		<p> Name of your file: {{fileTitle}}</p>
+		<p> Number of rows: {{rowNumber}}</p>
+		<p> Number of columns: {{columnNumber}}</p>	
+		<table class="table table-bordered">
+			<tr ng-repeat="row in data">
+				<td ng-repeat="cell in row">
+					{{cell}}
+				</td>
+			</tr>
+		</table>				
+	</div>
+	</div>
+</div>
+
+<footer class="footer">
+<p>&copy; 2017 MSA, Inc.</p>
+</footer>
